@@ -1,0 +1,441 @@
+
+body {
+    font-family:'Open_Sans',sans-serif ;/*основной шрифт*/
+    font-weight: 400;/*толщина шрифта*/
+    font-size: 16 px;
+    color: black;
+    background-color:rgb(255, 255, 255); 
+}
+/*utility*/
+.none {/*не перебить*/
+    display: none !important;
+}
+/*делаем эл-т скрытым на стр*/
+.visually-hidden {
+    position:absolute;
+    opacity: 0;
+    visibility:hidden;
+    width: 0px;
+    height: 0px;
+    display: block;
+    margin-left: -10000px;
+    background:transparent;
+    font-size: 0;
+}
+/*grid*/
+.container {
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width:1169px){
+    .container{
+        width: 100%;
+    }
+}
+
+.header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.header-row{
+    display: flex;/*в одну линию*/
+    align-items: center;
+    justify-content: space-between;
+}
+.header-nav ul{
+    display: flex;
+    
+}
+.header-nav li+li {
+    margin-left: 40px;/*всем пунктам меню указываем справа 20px */
+}
+/*.header-nav li:last-child{
+    margin-right: 0px; убираем отступ у последнего
+}*/
+.header-nav{
+    font-weight: 400px;
+}
+
+.header-nav a{
+    transition: color 0.2s ease ;
+}
+.header-nav a:hover{
+    color:rgb(54, 17, 102)
+}
+
+.home{
+    position: relative;
+    padding: 182px 20px 0 100px;
+    min-height: 750px;
+}
+
+.home-content{
+    max-width:1100px;
+    padding-top: 200px;
+}
+
+.home-heading{  
+    font-size: 96px;
+    font-weight:700;
+    font-family: 'Roboto-Black',serif;
+    text-align: right;
+   
+}
+
+.home-bg-img{
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(96, 151, 202);
+}
+
+.home-bg-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.AboutUs{
+    background-color:rgb(255, 255, 255);
+    padding: 100px 0;
+}
+
+
+.AboutUs-row{
+    display: flex;/*в строку*/
+    justify-content: space-between;
+}
+
+@media  (max-width:597px){
+    .AboutUs-row{
+        flex-direction: column;
+        width: 100%;
+    }
+    .AboutUsFoto{
+        padding-top: 10%;
+    }
+}
+.AboutUs-content{
+    margin-right: 60px;
+    max-width: 450px;
+}
+.AboutUs-heding{
+    font-size: 60px;
+    font-weight:500;
+    font-family: 'Roboto-Black',serif;
+    line-height: 157%;/*растояние между загол и текстом*/
+}
+.AboutUs-text{
+    font-size: 16px;
+    font-weight:500;
+    font-family: 'Open Sans',serif;
+    line-height: 157%;
+}
+
+.wedo{
+    background-color:rgb(51,41,41);
+    padding: 85px 0;
+    color: rgb(255, 255, 255);
+}
+.wedo-top-content{
+    margin-right: 60px;
+    max-width: 1036px;
+    padding-bottom: 65px;
+}
+
+.wedo-heanding {
+    font-size: 60px;
+    font-weight:500;
+    font-family: 'Roboto-Black',serif;
+    line-height: 157%;/*растояние между загол и текстом*/
+}
+
+.wedo-text {
+    font-size: 16px;
+    font-weight:500;
+    font-family: 'Open Sans',serif;
+    line-height: 157%;
+}
+.webo-row-content {
+  
+    display: flex;
+    justify-content: space-between;
+    max-width: 1036px;
+    padding: 55px 10px;
+    
+
+}
+
+.icon1 {
+    background-color:rgb(214, 218, 230);
+    border-radius:5%
+ 
+}
+.icon2 {
+    background-color:rgb(214, 218, 230);
+    border-radius:5%
+}
+.icon3 {
+    background-color:rgb(214, 218, 230);
+    border-radius:5%
+}
+.icon4 {
+    background-color:rgb(214, 218, 230);
+    border-radius:5%
+}
+
+.webo-row-content h3{
+    padding-top: 15%;
+    font-size: 27px;
+    font-family: 'Roboto-Black',serif;
+    text-align: center;
+    font-weight:500;
+    color:black;
+}
+.Ourtravels {
+   
+    padding: 70px 0;     
+}
+@media  (max-width:890px){
+    .wid{
+        width:720px ;
+    }
+
+}
+
+@media  (max-width:600px){
+    
+    .Ourtravelsline1{
+        flex-direction: column;
+    }
+    .Ourtravelsline2{
+        flex-direction: column;
+    }
+    .Ourtravelsline3{
+        flex-direction: column;
+    }
+    
+
+}
+
+
+.wid img{
+    max-height: 400px;
+    max-width:400px;
+    padding: 10px 10px 10px 10px;
+}
+
+
+
+.Ourtravelsline1 {
+    display: flex;
+   justify-content: center;
+    padding-top: 0;
+}
+
+.Ourtravelsline2 {
+    display: flex;
+    justify-content: center;
+   
+}
+.Ourtravelsline3 {
+    display: flex;
+    justify-content: center;
+    
+}
+.ContactUs {
+    background-color:rgb(107,71,72);
+    
+    padding: 153px 0;
+}
+.ContactUs-main{
+    display: flex;
+    
+}
+
+@media  (max-width:848px){
+
+    .ContactUs-main{
+        
+        flex-direction: column;
+
+    }
+    .ContactUs-text{
+       
+        flex-direction: column;
+        
+    }
+    .ContactUs-text p{
+        
+        padding-top: 5%;
+      
+    }
+    
+    
+}
+
+.ContactUs-heading {
+    font-size: 60px;
+    font-weight:500;
+    font-family: 'Roboto-Black',serif;
+    width: 400px;
+    color: white;
+    
+}
+.ContactUs p{ 
+    color:white;
+    padding-bottom: 90px;
+}
+.ContactUs-text {
+    width: 100%;
+    font-size: 16px;
+    font-weight:500;
+    font-family: 'Open Sans',serif;
+ 
+}
+
+.btn,a.btn {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    font-weight:600px;/*надо сделать жирным*/
+    background-color:white;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    transition: opacity 0.2s ease;
+}
+.btn:hover{
+    opacity: 0.8;
+}
+
+.Sayspeople {
+    padding: 80px 0px; 
+    background-color:242, 242, 242;
+    
+}
+.say_header {
+  text-align: right;
+  padding-bottom: 24px;
+  
+}
+.say_header h1{
+    font-size: 60px;
+    font-weight:500;
+    font-family: 'Roboto-Black',serif;
+}
+.say_header p{
+    font-size: 16px;
+    font-weight:500;
+    font-family: 'Open Sans',serif;
+}
+
+.say_steps {
+  
+    
+    padding-top: 43px;
+    font-size: 16px;
+   
+    text-align: center;
+    display: flex;justify-content: space-between;
+    
+
+}
+.say_steps img{
+    border-radius:90%;
+    max-width: 150px;
+    max-height:150px;
+    margin-left: 10px;
+}
+._text{
+    font-size: 16px;
+    font-weight:500;
+    font-family: 'Open Sans',serif;
+    padding-top: 25px;
+    line-height: 30px;
+    margin-left: 40px;
+}
+.say_steps h5{ text-align: center;
+    font-size: 20px;
+    padding-bottom: 24px;
+    padding-top: 21px;}
+.girl{
+    max-width: 583px;
+}
+.boy{
+    max-width: 583px;
+}
+
+@media  (max-width:760px){
+    .picline1{
+        flex-direction: column;
+    }
+    .picline2{
+        flex-direction: column;
+    }
+
+
+}
+.picline1{
+    display: flex;
+}
+
+
+.picline2{
+    display: flex;
+}
+
+.foto{
+    max-width: 759px;
+  
+}
+
+.minifooter img{
+    height: 622px;
+    width: 100%;
+
+}
+
+.information {
+    background-color:blueviolet
+}
+.adress {
+    position: absolute;
+    background-color:rgb(51,41,41);
+    justify-content: center;
+   
+   
+ 
+}
+.adress p{
+    color:white;
+    padding-bottom: 20px;
+    font-size: 16px;
+    font-weight:500;
+    font-family: 'Open Sans',serif;
+    
+}
+
+.adress h1{
+    color:white; 
+    font-size: 30px;
+    font-weight:500;
+    font-family: 'Roboto-Black',serif;
+    padding-top: 109px;
+    padding-bottom: 20px;
+}
+
+.mainfot {
+    background-color:rgb(51,41,41);
+    position: relative;
+    display: flex;
+    background-clip: padding-box;
+    background-origin: padding-box;
+}
